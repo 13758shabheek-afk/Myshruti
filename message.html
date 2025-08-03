@@ -5,15 +5,80 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Message for Shruti</title>
-  <link rel="stylesheet" href="style.css"/>
+  <link href="https://fonts.googleapis.com/css2?family=Sacramento&family=Poppins:wght@300;500&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background-color: #ffddee;
+      font-family: 'Poppins', sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    .card {
+      background: white;
+      padding: 30px 40px;
+      border-radius: 20px;
+      box-shadow: 0 15px 35px rgba(0,0,0,0.2);
+      text-align: center;
+      max-width: 400px;
+      animation: fadeIn 1.2s ease-in-out;
+    }
+
+    .card img {
+      width: 100%;
+      border-radius: 15px;
+      margin-bottom: 20px;
+      object-fit: cover;
+    }
+
+    h1 {
+      color: #d63384;
+      font-family: 'Sacramento', cursive;
+      font-size: 2.5rem;
+      margin-bottom: 10px;
+    }
+
+    p {
+      color: #444;
+      font-size: 1rem;
+      margin-bottom: 20px;
+    }
+
+    .btn {
+      background-color: #ff4da6;
+      color: white;
+      padding: 10px 25px;
+      border: none;
+      border-radius: 25px;
+      font-size: 1rem;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+      text-decoration: none;
+    }
+
+    .btn:hover {
+      background-color: #e60073;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+  </style>
 </head>
-<body class="message-page">
-  <div class="message-box">
-    <h2>My Dear Shruti,</h2>
-    <p>From endless giggles to deep talks, every moment with you is a treasure.
-    You are not just my bestie, but my forever kind of person.
-    Happy Friendship Day, I love you endlessly. 💗</p>
-    <a href="album1.html" class="btn">Next</a>
+<body>
+  <div class="card">
+    <img src="img1.jpg" alt="Shruti's Image" onerror="this.src='https://via.placeholder.com/350x200/ffcce5/000000?text=Happy+Friendship+Day'" />
+    <h1>My Dear Shruti,</h1>
+    <p>From endless giggles to deep talks, every moment with you is a treasure.  
+    You are not just my bestie, but my forever kind of person.  
+    Happy Friendship Day, I love you endlessly 💖</p>
+    <a href="carousel.html" class="btn">Next</a>
   </div>
 </body>
 </html>
+
